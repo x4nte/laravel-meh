@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@layer base {
+    code {
+        @apply bg-white text-black font-semibold px-1 py-0.5 rounded;
+    }
+}
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-black: #09090B;
+    --color-gray: #3d4249;
+}
+.Tyh7n {
+    @apply bg-gray-900 text-green-400 font-mono text-sm px-2 py-1 rounded border border-gray-700;
+    transition: all 0.2s ease;
+}
+
+.Tyh7n:hover {
+    @apply bg-gray-800 border-green-600;
+}
+
+.WLFIG {
+    @apply bg-white/10 border border-gray-700 rounded-xl overflow-hidden my-6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.WLFIG code {
+    @apply block p-4 font-mono text-sm text-gray-100 leading-relaxed overflow-x-auto;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.WLFIG code.language-php {
+    color: #e5e7eb;
+}
+
+
+.WLFIG code .comment {
+    @apply text-gray-400 italic;
+}
+
+
+.WLFIG code .keyword {
+    @apply text-purple-400 font-semibold;
+}
+
+
+.WLFIG code .string {
+    @apply text-yellow-300;
+}
+
+.WLFIG code .function {
+    @apply text-blue-400;
+}
+
+.WLFIG code .variable {
+    @apply text-green-400;
+}
+
+.WLFIG::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+.WLFIG::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+    border-radius: 4px;
+}
+
+.WLFIG::-webkit-scrollbar-thumb {
+    @apply bg-green-600 rounded;
+    transition: background-color 0.2s ease;
+}
+
+.WLFIG::-webkit-scrollbar-thumb:hover {
+    @apply bg-green-500;
+}
+
+p code.Tyh7n {
+    @apply bg-white/10 text-green-300 px-2 py-1 rounded text-xs border border-gray-600;
+    font-size: 0.875em;
+}
+
+.WLFIG:hover {
+    @apply border-gray-600;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+    transform: translateY(-1px);
+    transition: all 0.3s ease;
+}
+
+.WLFIG code::selection {
+    @apply bg-green-600 text-white;
+}

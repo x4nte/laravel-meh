@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    ports:
+     - "8000:80"
+    depends_on:
+      - app
+    container_name: nginx
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
+    volumes:
+    - ./:/var/www
+    command: >
+      sh -c "
+        chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache &&
+        chmod -R 775 /var/www/storage /var/www/bootstrap/cache &&
+        php-fpm"
+    depends_on:
+      - db
+    container_name: laravel-app
+
+  db:
+    image: mysql:latest
+    restart: always
+    volumes:
+      - ./tmp/db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: laravel-meh
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    container_name: mysql
