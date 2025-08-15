@@ -1,7 +1,7 @@
 <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16 items-center">
         <a href="/" class="flex items-center space-x-2 group">
-            <img src="/storage/dead-elephant.svg" alt="Логотип" title="На главную"
+            <img src="/dead-elephant.svg" alt="Логотип" title="На главную"
                  class="h-10 w-auto select-none transition-opacity duration-200 group-hover:opacity-80"/>
         </a>
         <div class="hidden md:flex items-center space-x-8 text-gray-400 text-sm font-medium select-none">
@@ -27,7 +27,7 @@
                     <button id="user-menu-button"
                             class="flex items-center min-w-0 max-w-full px-3 py-1.5 text-sm text-gray-300 rounded-md transition-all duration-200 hover:bg-white/5"
                             type="button" aria-haspopup="true" aria-expanded="false">
-                        <img src="/storage/user.png"
+                        <img src="/user.png"
                              alt="avatar"
                              class="h-4 w-4 rounded-full object-cover bg-black mr-2 transition-colors duration-200"/>
                         <span class="truncate transition-colors duration-200">
