@@ -17,7 +17,7 @@ class TopicSeeder extends Seeder
             ['id' => 1, 'title' => 'php'],
             ['id' => 2, 'title' => 'laravel'],
             ['id' => 3, 'title' => 'sql'],
-            ['id' => 3, 'title' => 'mixed'],
+            ['id' => 4, 'title' => 'mixed'],
         ];
         foreach ($topics as $topic) {
             Topic::updateOrCreate(['id' => $topic['id']], $topic);
