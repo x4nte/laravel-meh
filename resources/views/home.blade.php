@@ -33,7 +33,7 @@
         <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
             <div class="grid md:grid-cols-3 gap-8">
 
-                <a href="http://localhost:8000/questions/?sort=php"
+                <a href="/questions/?sort=php"
                    class="group block bg-black border border-white/10 hover:border-white rounded-3xl p-12 transition-all duration-500 hover:transform hover:scale-105 relative overflow-hidden no-underline">
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-transparent to-gray-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -74,7 +74,7 @@
                     </div>
                 </a>
 
-                <a href="http://localhost:8000/questions/?sort=laravel"
+                <a href="questions/?sort=laravel"
                    class="group block bg-black border border-white/10 hover:border-white rounded-3xl p-12 transition-all duration-500 hover:transform hover:scale-105 relative overflow-hidden no-underline">
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-transparent to-gray-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -115,7 +115,7 @@
                     </div>
                 </a>
 
-                <a href="http://localhost:8000/questions/?sort=sql"
+                <a href="/questions/?sort=sql"
                    class="group block bg-black border border-white/10 hover:border-white rounded-3xl p-12 transition-all duration-500 hover:transform hover:scale-105 relative overflow-hidden no-underline">
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-transparent to-gray-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
