@@ -27,12 +27,20 @@ class CreateUserAdmin extends Command
      */
     public function handle()
     {
+        $email = 'admin@mail.ru';
+        $password = 'password';
+
         $user = User::create([
             'name' => 'admin',
-            'email' => 'admin@mail.ru',
-            'password' => Hash::make('eternaldaler'),
+            'email' => $email,
+            'password' => Hash::make($password),
             'is_admin' => true,
         ]);
+
+        $this->info("Admin user created successfully!");
+        $this->info("Email: {$email}");
+        $this->info("Password: {$password}");
+
         return 0;
     }
 }
