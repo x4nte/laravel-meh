@@ -46,6 +46,10 @@
 ```bash
 php artisan app:yeahub-questions-load
 ```
+### Загрузка Топиков
+```bash
+php artisan db:seed --class=TopicSeeder
+```
 
 ### Создание администратора
 ```bash
@@ -62,6 +66,7 @@ npm run dev
 ```bash
 npm run build
 ```
+
 
 
 
