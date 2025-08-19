@@ -6,7 +6,7 @@
                 <h1 class="text-4xl sm:text-7xl font-semibold text-white tracking-wide select-none leading-tight">
                     Вопросы для
                     <span
-                        class="inline-block bg-white text-black text-5xl font-bold px-6 py-2 rounded-full select-none align-middle">
+                        class="inline-block bg-white text-black text-5xl font-extrabold px-6 py-2 rounded-full select-none align-middle">
                         PHP
     </span>
                     backend
@@ -40,7 +40,7 @@
                     <div class="relative z-10">
                         <div
                             class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-10 shadow-2xl group-hover:shadow-white/20 transition-all duration-500">
-                            <span class="text-black font-black text-xl select-none">PHP</span>
+                            <span class="text-black font-black font-extrabold text-2xl select-none">PHP</span>
                         </div>
                         <h3
                             class="text-3xl font-bold text-white mb-8 tracking-tight group-hover:text-gray-200 transition-colors duration-300">
